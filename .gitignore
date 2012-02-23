@@ -1,0 +1,4 @@
+build/*
+cscope.out
+project.vim
+tags
