@@ -8,6 +8,7 @@ require 'tools/rake_utils/source/tests'
 # Configuration for the static library
 CorkStatic = Library.new({
     :name => 'libcork.a',
+    :output_dir => 'build/static',
     :compiler_options => [ '-c', '-Wall', '-Werror', '-o' ],
     :source_files => [ 'source/**/*.c*' ],
     :include_dirs => [ 'source/**/' ],
@@ -17,6 +18,7 @@ CorkStatic.setup_default_rake_tasks()
 # Configuration for the shared library
 CorkShared = Library.new({
     :name => 'libcork.so',
+    :output_dir => 'build/shared',
     :compiler_options => [ '-c', '-Wall', '-Werror', '-o' ],
     :linker_bin => 'c++',
     :linker_options => ['-shared', '-o'],
@@ -27,6 +29,7 @@ CorkShared.setup_default_rake_tasks()
 
 # Configuration for the unit tests
 UnitTest = Tests.new({
+    :output_dir => 'build/tests',
     :test_files => [ 'tests/source/**.h' ],
 })
 UnitTest.setup_default_rake_tasks()
