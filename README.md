@@ -1,8 +1,8 @@
 Cork
 ==============================================
-Version:      0.1
-Created By:   Michael D. Lowis
-Email:        mike@mdlowis.com
+    Version:      0.1
+    Created By:   Michael D. Lowis
+    Email:        mike@mdlowis.com
 
 About This Project
 ----------------------------------------------
