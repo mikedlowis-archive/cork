@@ -1,6 +1,6 @@
 include Rake::DSL
-require 'tools/rake_utils/library.rb'
-require 'tools/rake_utils/tests.rb'
+require 'tools/rake_utils/source/library'
+require 'tools/rake_utils/source/tests'
 
 #------------------------------------------------------------------------------
 # Configuration Objects
@@ -17,7 +17,7 @@ CorkStatic.setup_default_rake_tasks()
 # Configuration for the shared library
 CorkShared = Library.new({
     :name => 'libcork.so',
-    :compiler_options => [ '-c', '-Wall', '-Werror', '-fPIC', '-o' ],
+    :compiler_options => [ '-c', '-Wall', '-Werror', '-o' ],
     :linker_bin => 'c++',
     :linker_options => ['-shared', '-o'],
     :source_files => [ 'source/**/*.c*' ],
@@ -39,19 +39,4 @@ task :default => [ :release ]
 
 desc 'Build and link the static library'
 task :release => [ CorkStatic.name(), CorkShared.name() ]
-
-desc 'Display build configuration info'
-task :config do
-    puts 'Static Library Configuration'
-    puts '----------------------------'
-    puts CorkStatic
-    puts ''
-    puts 'Shared Library Configuration'
-    puts '----------------------------'
-    puts CorkShared
-    puts ''
-    puts 'Unit Test Configuration'
-    puts '-----------------------'
-    puts UnitTest
-end
 

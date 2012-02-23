@@ -15,7 +15,7 @@ Adapter	tools\cxxtest\cxxtest\StdioFilePrinter.h	/^        class Adapter : publi
 Adapter	tools\cxxtest\cxxtest\XmlPrinter.h	/^        class Adapter : public OutputStream$/;"	c	class:CxxTest::XmlPrinter
 Answer	tools\cxxtest\doc\examples\MyTestSuite9.h	/^enum Answer {$/;"	g
 Answer	tools\cxxtest\sample\EnumTraits.h	/^enum Answer {$/;"	g
-Artifact	tools\rake_utils\artifact.rb	/^class Artifact$/;"	c
+Artifact	tools\rake_utils\source\artifact.rb	/^class Artifact$/;"	c
 BASE	tools\cxxtest\cxxtest\ValueTraits.h	/^        enum { MAX_DIGITS_ON_LEFT = 24, DIGITS_ON_RIGHT = 4, BASE = 10 };$/;"	e	enum:CxxTest::ValueTraits::__anon4
 BM_GETCHECK	tools\cxxtest\test\fake\commctrl.h	/^       SB_SETTEXTA, SB_SETPARTS, BS_AUTOCHECKBOX, BM_SETCHECK, BST_UNCHECKED, BM_GETCHECK,$/;"	e	enum:__anon9
 BM_SETCHECK	tools\cxxtest\test\fake\commctrl.h	/^       SB_SETTEXTA, SB_SETPARTS, BS_AUTOCHECKBOX, BM_SETCHECK, BST_UNCHECKED, BM_GETCHECK,$/;"	e	enum:__anon9
@@ -28,7 +28,7 @@ BadTest	tools\cxxtest\test\BadTest.h	/^class BadTest $/;"	c
 BadTestSuite1	tools\cxxtest\doc\examples\BadTestSuite1.h	/^class BadTestSuite1 : public CxxTest::TestSuite$/;"	c
 BaseTestCase	tools\cxxtest\test\test_cxxtest.py	/^class BaseTestCase(object):$/;"	c
 BaseTests	tools\cxxtest\test\InheritedTest.h	/^class BaseTests$/;"	c
-Binary	tools\rake_utils\binary.rb	/^class Binary < Artifact$/;"	c
+Binary	tools\rake_utils\source\binary.rb	/^class Binary < Artifact$/;"	c
 BlockTable	source\cork.cpp	/^typedef struct BlockTable$/;"	s	file:
 BlockTableEntry	source\cork.cpp	/^typedef struct BlockTableEntry$/;"	s	file:
 BlockTableEntry_T	source\cork.cpp	/^} BlockTableEntry_T;$/;"	t	typeref:struct:BlockTableEntry	file:
@@ -345,7 +345,7 @@ LPSTR	tools\cxxtest\test\fake\windows.h	/^typedef char *LPSTR;$/;"	t
 LPVOID	tools\cxxtest\test\fake\windows.h	/^typedef void *LPVOID;$/;"	t
 LRESULT	tools\cxxtest\test\fake\windows.h	/^typedef unsigned long DWORD, ULONG, LRESULT, LPARAM, WPARAM;$/;"	t
 LessThanEquals	tools\cxxtest\test\LessThanEquals.h	/^class LessThanEquals : public CxxTest::TestSuite$/;"	c
-Library	tools\rake_utils\library.rb	/^class Library < Artifact$/;"	c
+Library	tools\rake_utils\source\library.rb	/^class Library < Artifact$/;"	c
 Limit	tools\cxxtest\test\Factor.h	/^    enum Limit { MAX_STRLEN_TOTAL_TESTS = CxxTest::WorldDescription::MAX_STRLEN_TOTAL_TESTS };$/;"	g	class:Factor
 Link	tools\cxxtest\cxxtest\LinkedList.cpp	/^    Link::Link() :$/;"	f	class:CxxTest::Link
 Link	tools\cxxtest\cxxtest\LinkedList.h	/^    class Link$/;"	c	namespace:CxxTest
@@ -358,6 +358,7 @@ LongLongTest	tools\cxxtest\test\LongLong.h	/^class LongLongTest : public CxxTest
 MAKELPARAM	tools\cxxtest\test\fake\windows.h	/^inline LPARAM MAKELPARAM( unsigned short, unsigned short ) { return 0; }$/;"	f
 MAX_BYTES	tools\cxxtest\cxxtest\ValueTraits.h	/^        enum { MAX_BYTES = 8 };$/;"	e	enum:CxxTest::ValueTraits::__anon3
 MAX_DIGITS_ON_LEFT	tools\cxxtest\cxxtest\ValueTraits.h	/^        enum { MAX_DIGITS_ON_LEFT = 24, DIGITS_ON_RIGHT = 4, BASE = 10 };$/;"	e	enum:CxxTest::ValueTraits::__anon4
+MAX_H	tools\rake_utils\examples\maxlib\source\max.h	2;"	d
 MAX_STRLEN_TOTAL_TESTS	tools\cxxtest\cxxtest\Descriptions.h	/^        enum { MAX_STRLEN_TOTAL_TESTS = 32 };$/;"	e	enum:CxxTest::WorldDescription::__anon1
 MAX_STRLEN_TOTAL_TESTS	tools\cxxtest\test\Factor.h	/^    enum Limit { MAX_STRLEN_TOTAL_TESTS = CxxTest::WorldDescription::MAX_STRLEN_TOTAL_TESTS };$/;"	e	enum:Factor::Limit
 MSG	tools\cxxtest\test\fake\windows.h	/^struct MSG$/;"	s
@@ -666,7 +667,7 @@ TestUserTraits	tools\cxxtest\test\UserTraits.h	/^class TestUserTraits : public C
 Tests	tools\cxxtest\test\CppTemplateTest.h	/^class Tests$/;"	c
 Tests	tools\cxxtest\test\SimpleInheritedTest.h	/^class Tests : public CxxTest::TestSuite$/;"	c
 Tests	tools\cxxtest\test\SimpleInheritedTest2.h	/^class Tests$/;"	c
-Tests	tools\rake_utils\tests.rb	/^class Tests < Artifact$/;"	c
+Tests	tools\rake_utils\source\tests.rb	/^class Tests < Artifact$/;"	c
 Thing	tools\cxxtest\test\ThrowsAssert.h	/^    Thing( int argI ) : _i(argI) {}$/;"	f	class:Thing
 Thing	tools\cxxtest\test\ThrowsAssert.h	/^class Thing$/;"	c
 ThrowCreate	tools\cxxtest\test\Exceptions.h	/^class ThrowCreate : public CxxTest::TestSuite$/;"	c
@@ -1235,7 +1236,7 @@ baseclassdef	tools\cxxtest\python\python3\cxxtest\cxxtest_parser.py	/^baseclassd
 basename	tools\cxxtest\doc\examples\test_examples.py	/^from os.path import dirname, abspath, basename$/;"	i
 basename	tools\cxxtest\test\test_doc.py	/^from os.path import dirname, abspath, abspath, basename$/;"	i
 basestring	tools\cxxtest\admin\virtualenv.py	/^    basestring = str$/;"	v
-bin_obj_lookup	tools\rake_utils\tests.rb	/^    def bin_obj_lookup()$/;"	f	class:Tests
+bin_obj_lookup	tools\rake_utils\source\tests.rb	/^    def bin_obj_lookup()$/;"	f	class:Tests
 blocks	source\cork.cpp	/^    BlockTableEntry_T* blocks[TBL_SIZE];$/;"	m	struct:BlockTable	file:
 bname	tools\cxxtest\doc\examples\test_examples.py	/^        bname = basename(file)$/;"	v	class:Test
 bootstrap	tools\cxxtest\admin\virtualenv.py	/^            logger.info("Cannot import bootstrap module: %s" % modname)$/;"	i
@@ -1284,7 +1285,7 @@ codecs	tools\cxxtest\python\cxxtest\cxxtest_parser.py	/^import codecs$/;"	i
 codecs	tools\cxxtest\python\python3\cxxtest\cxxtest_parser.py	/^import codecs$/;"	i
 collapse_docbook	tools\cxxtest\doc\epub\bin\lib\docbook.rb	/^    def collapse_docbook$/;"	f	class:DocBook.Epub
 compile	tools\cxxtest\test\test_cxxtest.py	/^    def compile(self, prefix='', args=None, compile='', output=None, main=None, failGen=False, run=None, logfile=None, failBuild=False):$/;"	m	class:BaseTestCase
-compile	tools\rake_utils\artifact.rb	/^    def compile(input,output)$/;"	f	class:Artifact
+compile	tools\rake_utils\source\artifact.rb	/^    def compile(input,output)$/;"	f	class:Artifact
 compiler	tools\cxxtest\test\test_cxxtest.py	/^    compiler='c++ -Wall -W -Werror -g'$/;"	v	class:TestCpp
 compiler	tools\cxxtest\test\test_cxxtest.py	/^    compiler='cl -nologo -GX -W4 -WX'$/;"	v	class:TestCL
 compiler	tools\cxxtest\test\test_cxxtest.py	/^    compiler='clang++ -v -g -Wall -W -Wshadow -Woverloaded-virtual -Wnon-virtual-dtor -Wreorder -Wsign-promo'$/;"	v	class:TestClang
@@ -1359,9 +1360,9 @@ defaultCxxTestGenLocation	tools\cxxtest\build_tools\SCons\cxxtest.py	/^def defau
 default_config_file	tools\cxxtest\admin\virtualenv.py	/^default_config_file = os.path.join(default_storage_dir, 'virtualenv.ini')$/;"	v
 default_storage_dir	tools\cxxtest\admin\virtualenv.py	/^    default_storage_dir = os.path.join(user_dir, '.virtualenv')$/;"	v
 default_storage_dir	tools\cxxtest\admin\virtualenv.py	/^    default_storage_dir = os.path.join(user_dir, 'virtualenv')$/;"	v
-defaults	tools\rake_utils\artifact.rb	/^    def defaults()$/;"	f	class:Artifact
-defaults	tools\rake_utils\library.rb	/^    def defaults()$/;"	f	class:Library
-defaults	tools\rake_utils\tests.rb	/^    def defaults()$/;"	f	class:Tests
+defaults	tools\rake_utils\source\artifact.rb	/^    def defaults()$/;"	f	class:Artifact
+defaults	tools\rake_utils\source\library.rb	/^    def defaults()$/;"	f	class:Library
+defaults	tools\rake_utils\source\tests.rb	/^    def defaults()$/;"	f	class:Tests
 del	tools\cxxtest\admin\virtualenv.py	/^    activate = "import os; activate_this=os.path.join(os.path.dirname(__file__), 'activate_this.py'); execfile(activate_this, dict(__file__=activate_this)); del os, activate_this"$/;"	i
 delta	tools\cxxtest\cxxtest\StdTestSuite.h	/^struct delta<std::list<X>, std::list<Y>, D>$/;"	s	namespace:CxxTest
 delta	tools\cxxtest\cxxtest\StdTestSuite.h	/^struct delta<std::vector<X>, std::vector<Y>, D>$/;"	s	namespace:CxxTest
@@ -1386,8 +1387,8 @@ dict	tools\cxxtest\admin\virtualenv.py	/^    activate = "import os; activate_thi
 differs	tools\cxxtest\cxxtest\TestSuite.h	/^    struct differs {$/;"	s	namespace:CxxTest
 difflib	tools\cxxtest\test\test_cxxtest.py	/^import difflib$/;"	i
 digitToChar	tools\cxxtest\cxxtest\ValueTraits.cpp	/^    char digitToChar( unsigned digit )$/;"	f	namespace:CxxTest
-directories	tools\rake_utils\artifact.rb	/^    def directories()$/;"	f	class:Artifact
-directories	tools\rake_utils\tests.rb	/^    def directories()$/;"	f	class:Tests
+directories	tools\rake_utils\source\artifact.rb	/^    def directories()$/;"	f	class:Artifact
+directories	tools\rake_utils\source\tests.rb	/^    def directories()$/;"	f	class:Tests
 dirname	tools\cxxtest\admin\virtualenv.py	/^    activate = "import os; activate_this=os.path.join(os.path.dirname(__file__), 'activate_this.py'); execfile(activate_this, dict(__file__=activate_this)); del os, activate_this"$/;"	i
 dirname	tools\cxxtest\doc\examples\test_examples.py	/^from os.path import dirname, abspath, basename$/;"	i
 dirname	tools\cxxtest\python\setup.py	/^from os.path import realpath, dirname$/;"	i
@@ -1654,7 +1655,7 @@ generate	tools\cxxtest\build_tools\SCons\cxxtest.py	/^def generate(env, **kwargs
 generateRandomNumber	tools\cxxtest\doc\examples\rand_example.cpp	/^int generateRandomNumber()$/;"	f
 generateSuite	tools\cxxtest\python\cxxtest\cxxtestgen.py	/^def generateSuite( output, suite ):$/;"	f
 generateSuite	tools\cxxtest\python\python3\cxxtest\cxxtestgen.py	/^def generateSuite( output, suite ):$/;"	f
-generate_test_runner	tools\rake_utils\tests.rb	/^    def generate_test_runner(input,output)$/;"	f	class:Tests
+generate_test_runner	tools\rake_utils\source\tests.rb	/^    def generate_test_runner(input,output)$/;"	f	class:Tests
 generatedSuite_re	tools\cxxtest\python\cxxtest\cxxtest_parser.py	/^generatedSuite_re = re.compile( r'\\bCXXTEST_SUITE\\s*\\(\\s*(\\w*)\\s*\\)' )$/;"	v
 generatedSuite_re	tools\cxxtest\python\python3\cxxtest\cxxtest_parser.py	/^generatedSuite_re = re.compile( r'\\bCXXTEST_SUITE\\s*\\(\\s*(\\w*)\\s*\\)' )$/;"	v
 getColor	tools\cxxtest\cxxtest\X11Gui.h	/^        unsigned long getColor( const char *colorName )$/;"	f	class:CxxTest::X11Gui
@@ -1672,7 +1673,7 @@ getTotalTests	tools\cxxtest\cxxtest\X11Gui.h	/^        void getTotalTests( const
 getTotalTests	tools\cxxtest\cxxtest\X11Gui.h	/^        void getTotalTests()$/;"	f	class:CxxTest::X11Gui
 getWholeScreenArea	tools\cxxtest\cxxtest\Win32Gui.h	/^        void getWholeScreenArea( RECT &area )$/;"	f	class:CxxTest::Win32Gui
 getWindowSize	tools\cxxtest\cxxtest\X11Gui.h	/^        void getWindowSize()$/;"	f	class:CxxTest::X11Gui
-get_bin_extension	tools\rake_utils\artifact.rb	/^    def get_bin_extension()$/;"	f	class:Artifact
+get_bin_extension	tools\rake_utils\source\artifact.rb	/^    def get_bin_extension()$/;"	f	class:Artifact
 get_config_files	tools\cxxtest\admin\virtualenv.py	/^    def get_config_files(self):$/;"	m	class:ConfigOptionParser
 get_config_section	tools\cxxtest\admin\virtualenv.py	/^    def get_config_section(self, name):$/;"	m	class:ConfigOptionParser
 get_default_values	tools\cxxtest\admin\virtualenv.py	/^    def get_default_values(self):$/;"	m	class:ConfigOptionParser
@@ -1752,10 +1753,10 @@ initialize	tools\cxxtest\cxxtest\RealDescriptions.cpp	/^    void StaticSuiteDesc
 initialize	tools\cxxtest\cxxtest\RealDescriptions.h	/^        void initialize( const char *argFile, unsigned argLine,$/;"	f	class:CxxTest::DynamicSuiteDescription
 initialize	tools\cxxtest\cxxtest\TestTracker.cpp	/^    void TestTracker::initialize()$/;"	f	class:CxxTest::TestTracker
 initialize	tools\cxxtest\doc\epub\bin\lib\docbook.rb	/^    def initialize(docbook_file, output_dir=OUTPUT_DIR, css_file=nil, customization_layer=nil, embedded_fonts=[])$/;"	f	class:DocBook.Epub
-initialize	tools\rake_utils\artifact.rb	/^    def initialize(config)$/;"	f	class:Artifact
-initialize	tools\rake_utils\binary.rb	/^    def initialize(config)$/;"	f	class:Binary
-initialize	tools\rake_utils\library.rb	/^    def initialize(config)$/;"	f	class:Library
-initialize	tools\rake_utils\tests.rb	/^    def initialize(config)$/;"	f	class:Tests
+initialize	tools\rake_utils\source\artifact.rb	/^    def initialize(config)$/;"	f	class:Artifact
+initialize	tools\rake_utils\source\binary.rb	/^    def initialize(config)$/;"	f	class:Binary
+initialize	tools\rake_utils\source\library.rb	/^    def initialize(config)$/;"	f	class:Library
+initialize	tools\rake_utils\source\tests.rb	/^    def initialize(config)$/;"	f	class:Tests
 initializeBar	tools\cxxtest\cxxtest\X11Gui.h	/^        void initializeBar( const WorldDescription &wd )$/;"	f	class:CxxTest::X11Gui
 initializeEvents	tools\cxxtest\cxxtest\X11Gui.h	/^        void initializeEvents()$/;"	f	class:CxxTest::X11Gui
 insert	tools\cxxtest\python\cxxtest\cxx_parser.py	/^    def insert(self,scope):$/;"	m	class:Scope
@@ -1847,7 +1848,7 @@ lineCont_re	tools\cxxtest\python\cxxtest\cxxtest_parser.py	/^lineCont_re = re.co
 lineCont_re	tools\cxxtest\python\python3\cxxtest\cxxtest_parser.py	/^lineCont_re = re.compile('(.*)\\\\\\s*$')$/;"	v
 lineStartsBlock	tools\cxxtest\python\cxxtest\cxxtest_parser.py	/^def lineStartsBlock( line ):$/;"	f
 lineStartsBlock	tools\cxxtest\python\python3\cxxtest\cxxtest_parser.py	/^def lineStartsBlock( line ):$/;"	f
-link	tools\rake_utils\artifact.rb	/^    def link(*args)$/;"	f	class:Artifact
+link	tools\rake_utils\source\artifact.rb	/^    def link(*args)$/;"	f	class:Artifact
 links	tools\cxxtest\build_tools\SCons\test\default_env\TestDef.py	/^links = {$/;"	v
 links	tools\cxxtest\build_tools\SCons\test\empty_source_list\TestDef.py	/^links = {'cxxtest' : '..\/..\/..\/..\/'}$/;"	v
 links	tools\cxxtest\build_tools\SCons\test\expanding_#\TestDef.py	/^links = {'src' : '..\/..\/..\/..\/test'}$/;"	v
@@ -1890,15 +1891,18 @@ main	tools\cxxtest\test\main.cpp	/^int main()$/;"	f
 main	tools\cxxtest\test\stpltpl.cpp	/^int main() { return 0; }$/;"	f
 main	tools\cxxtest\test\tpltpl.cpp	/^int main() { return 0; }$/;"	f
 main	tools\cxxtest\test\wchar.cpp	/^int main()$/;"	f
+main	tools\rake_utils\examples\maxapp1\source\main.cpp	/^int main(int argc, char** argv)$/;"	f
+main	tools\rake_utils\examples\maxapp2\source\main.cpp	/^int main(int argc, char** argv)$/;"	f
 maintainer	tools\cxxtest\python\setup.py	/^      maintainer=cxxtest.__maintainer__,$/;"	v
 maintainer_email	tools\cxxtest\python\setup.py	/^      maintainer_email=cxxtest.__maintainer_email__,$/;"	v
 make_diff_readable	tools\cxxtest\test\test_cxxtest.py	/^def make_diff_readable(diff):$/;"	f
 make_environment_relocatable	tools\cxxtest\admin\virtualenv.py	/^def make_environment_relocatable(home_dir):$/;"	f
 make_exe	tools\cxxtest\admin\virtualenv.py	/^def make_exe(fn):$/;"	f
-make_file_list	tools\rake_utils\artifact.rb	/^    def make_file_list(patt_list)$/;"	f	class:Artifact
-make_option_list	tools\rake_utils\artifact.rb	/^    def make_option_list(prefix,list)$/;"	f	class:Artifact
+make_file_list	tools\rake_utils\source\artifact.rb	/^    def make_file_list(patt_list)$/;"	f	class:Artifact
+make_option_list	tools\rake_utils\source\artifact.rb	/^    def make_option_list(prefix,list)$/;"	f	class:Artifact
 make_relative_path	tools\cxxtest\admin\virtualenv.py	/^def make_relative_path(source, dest, dest_is_directory=True):$/;"	f
 malloc	source\cork.cpp	4;"	d	file:
+max	tools\rake_utils\examples\maxlib\source\max.cpp	/^int max(int a, int b)$/;"	f
 maxDumpSize	tools\cxxtest\cxxtest\TestSuite.cpp	/^    unsigned maxDumpSize()$/;"	f	namespace:CxxTest
 messageLoop	tools\cxxtest\cxxtest\Win32Gui.h	/^        void messageLoop()$/;"	f	class:CxxTest::Win32Gui
 mkdir	tools\cxxtest\admin\virtualenv.py	/^def mkdir(path):$/;"	f
@@ -1908,8 +1912,8 @@ n	tools\cxxtest\test\Factor.h	/^        unsigned n;$/;"	m	class:Factor::X
 name	tools\cxxtest\cxxtest\XmlFormatter.h	/^        std::string name;$/;"	m	class:CxxTest::ElementInfo
 name	tools\cxxtest\doc\examples\test_examples.py	/^        name=bname.split('.')[0]$/;"	v	class:Test
 name	tools\cxxtest\sample\TraitsTest.h	/^    const char *name() const { return _name; }$/;"	f	class:Pet
-name	tools\rake_utils\binary.rb	/^    def name()$/;"	f	class:Binary
-name	tools\rake_utils\library.rb	/^    def name()$/;"	f	class:Library
+name	tools\rake_utils\source\binary.rb	/^    def name()$/;"	f	class:Binary
+name	tools\rake_utils\source\library.rb	/^    def name()$/;"	f	class:Library
 negative	tools\cxxtest\cxxtest\ValueTraits.h	/^    template<class N> inline bool negative( N n ) { return n < 0; }$/;"	f	namespace:CxxTest
 nerror	tools\cxxtest\cxxtest\XmlFormatter.h	/^        int nerror;$/;"	m	class:CxxTest::XmlFormatter
 newLine	tools\cxxtest\cxxtest\ErrorFormatter.h	/^        void newLine( void )$/;"	f	class:CxxTest::ErrorFormatter
@@ -1957,11 +1961,12 @@ o	tools\cxxtest\cxxtest\ErrorPrinter.h	/^        ErrorPrinter( CXXTEST_STD(ostre
 o	tools\cxxtest\cxxtest\ParenPrinter.h	/^        ParenPrinter( CXXTEST_STD(ostream) &o = CXXTEST_STD(cout) ) : ErrorPrinter( o, "(", ")" ) {}$/;"	m	class:CxxTest::ParenPrinter
 o	tools\cxxtest\cxxtest\XUnitPrinter.h	/^        XUnitPrinter( CXXTEST_STD(ostream) &o = CXXTEST_STD(cout) )$/;"	m	class:CxxTest::XUnitPrinter
 o	tools\cxxtest\cxxtest\XmlPrinter.h	/^        XmlPrinter( CXXTEST_STD(ostream) &o = CXXTEST_STD(cout), const char* \/*preLine*\/ = ":", const char* \/*postLine*\/ = "" ) :$/;"	m	class:CxxTest::XmlPrinter
-obj_src_lookup	tools\rake_utils\binary.rb	/^    def obj_src_lookup()$/;"	f	class:Binary
-obj_src_lookup	tools\rake_utils\library.rb	/^    def obj_src_lookup()$/;"	f	class:Library
-obj_src_lookup	tools\rake_utils\tests.rb	/^    def obj_src_lookup()$/;"	f	class:Tests
-objects	tools\rake_utils\binary.rb	/^    def objects()$/;"	f	class:Binary
-objects	tools\rake_utils\library.rb	/^    def objects()$/;"	f	class:Library
+obj_pattern	tools\rake_utils\source\artifact.rb	/^    def obj_pattern()$/;"	f	class:Artifact
+obj_src_lookup	tools\rake_utils\source\binary.rb	/^    def obj_src_lookup()$/;"	f	class:Binary
+obj_src_lookup	tools\rake_utils\source\library.rb	/^    def obj_src_lookup()$/;"	f	class:Library
+obj_src_lookup	tools\rake_utils\source\tests.rb	/^    def obj_src_lookup()$/;"	f	class:Tests
+objects	tools\rake_utils\source\binary.rb	/^    def objects()$/;"	f	class:Binary
+objects	tools\rake_utils\source\library.rb	/^    def objects()$/;"	f	class:Library
 one	tools\cxxtest\test\MockTest.h	/^    int one() { return result; }$/;"	f	class:MockOne
 one	tools\cxxtest\test\MockTest.h	/^static int one( void ) { return 1; }$/;"	f
 openDisplay	tools\cxxtest\cxxtest\X11Gui.h	/^        void openDisplay()$/;"	f	class:CxxTest::X11Gui
@@ -2497,7 +2502,7 @@ redBar	tools\cxxtest\test\cxxtest\DummyGui.h	/^        void redBar()$/;"	f	class
 redBarSafe	tools\cxxtest\cxxtest\Gui.h	/^        void redBarSafe()$/;"	f	class:CxxTest::GuiListener
 redraw	tools\cxxtest\cxxtest\X11Gui.h	/^        void redraw()$/;"	f	class:CxxTest::X11Gui
 registerWindowClass	tools\cxxtest\cxxtest\Win32Gui.h	/^        void registerWindowClass()$/;"	f	class:CxxTest::Win32Gui
-register_directory	tools\rake_utils\artifact.rb	/^    def register_directory(dir_name)$/;"	f	class:Artifact
+register_directory	tools\rake_utils\source\artifact.rb	/^    def register_directory(dir_name)$/;"	f	class:Artifact
 reinstall	tools\cxxtest\doc\guide.html	/^  function reinstall() {$/;"	f
 reinstallAndRemoveTimer	tools\cxxtest\doc\guide.html	/^  function reinstallAndRemoveTimer() {$/;"	f
 rememberSuite	tools\cxxtest\python\cxxtest\cxxtest_parser.py	/^def rememberSuite(suite):$/;"	f
@@ -2549,10 +2554,10 @@ runGui	tools\cxxtest\cxxtest\Gui.h	/^        virtual void runGui( int &argc, cha
 runSuite	tools\cxxtest\cxxtest\TestRunner.h	/^        void runSuite( SuiteDescription &sd )$/;"	f	class:CxxTest::TestRunner
 runTest	tools\cxxtest\cxxtest\TestRunner.h	/^        void runTest( TestDescription &td )$/;"	f	class:CxxTest::TestRunner
 runWorld	tools\cxxtest\cxxtest\TestRunner.h	/^        void runWorld()$/;"	f	class:CxxTest::TestRunner
-run_all_test_runners	tools\rake_utils\tests.rb	/^    def run_all_test_runners()$/;"	f	class:Tests
+run_all_test_runners	tools\rake_utils\source\tests.rb	/^    def run_all_test_runners()$/;"	f	class:Tests
 run_scons	tools\cxxtest\build_tools\SCons\test\eprouvette.py	/^def run_scons(t, opts):$/;"	f
 run_test	tools\cxxtest\build_tools\SCons\test\eprouvette.py	/^def run_test(t):$/;"	f
-runners	tools\rake_utils\tests.rb	/^    def runners()$/;"	f	class:Tests
+runners	tools\rake_utils\source\tests.rb	/^    def runners()$/;"	f	class:Tests
 runtime	tools\cxxtest\cxxtest\XmlFormatter.h	/^        double runtime;$/;"	m	class:CxxTest::TestCaseInfo
 s	tools\cxxtest\admin\virtualenv.py	/^            logger.info("Cannot import bootstrap module: %s" % modname)$/;"	i
 sameData	tools\cxxtest\cxxtest\TestSuite.cpp	/^    bool sameData( const void *x, const void *y, unsigned size )$/;"	f	namespace:CxxTest
@@ -2674,8 +2679,9 @@ setWindowName	tools\cxxtest\cxxtest\X11Gui.h	/^        void setWindowName( const
 setWorld	tools\cxxtest\cxxtest\TestTracker.cpp	/^    void TestTracker::setWorld( const WorldDescription *w )$/;"	f	class:CxxTest::TestTracker
 setup	tools\cxxtest\python\setup.py	/^    from distutils.core import setup$/;"	i
 setup	tools\cxxtest\python\setup.py	/^    from setuptools import setup$/;"	i
-setup_default_rake_tasks	tools\rake_utils\library.rb	/^    def setup_default_rake_tasks()$/;"	f	class:Library
-setup_default_rake_tasks	tools\rake_utils\tests.rb	/^    def setup_default_rake_tasks()$/;"	f	class:Tests
+setup_default_rake_tasks	tools\rake_utils\source\binary.rb	/^    def setup_default_rake_tasks()$/;"	f	class:Binary
+setup_default_rake_tasks	tools\rake_utils\source\library.rb	/^    def setup_default_rake_tasks()$/;"	f	class:Library
+setup_default_rake_tasks	tools\rake_utils\source\tests.rb	/^    def setup_default_rake_tasks()$/;"	f	class:Tests
 setup_env	tools\cxxtest\build_tools\SCons\test\eprouvette.py	/^def setup_env(t, opts):$/;"	f
 showMainWindow	tools\cxxtest\cxxtest\Win32Gui.h	/^        void showMainWindow( int mode )$/;"	f	class:CxxTest::Win32Gui
 showMainWindow	tools\cxxtest\cxxtest\Win32Gui.h	/^        void showMainWindow()$/;"	f	class:CxxTest::Win32Gui
@@ -2701,10 +2707,10 @@ size	tools\cxxtest\cxxtest\LinkedList.cpp	/^    unsigned List::size() const$/;"	
 size	tools\cxxtest\sample\SCons\include\stack.h	/^    int size;$/;"	m	struct:stack_t
 size_t	source\cork.h	/^typedef unsigned int size_t;$/;"	t
 something	tools\cxxtest\test\Something.h	/^inline std::string something() { return "something"; }$/;"	f
-source_from_obj	tools\rake_utils\binary.rb	/^    def source_from_obj(obj)$/;"	f	class:Binary
-source_from_obj	tools\rake_utils\library.rb	/^    def source_from_obj(obj)$/;"	f	class:Library
+source_from_obj	tools\rake_utils\source\binary.rb	/^    def source_from_obj(obj)$/;"	f	class:Binary
+source_from_obj	tools\rake_utils\source\library.rb	/^    def source_from_obj(obj)$/;"	f	class:Library
 srand	tools\cxxtest\sample\mock\MockStdlib.h	/^    void srand( unsigned seed )$/;"	f	class:MockStdlib
-src_test_lookup	tools\rake_utils\tests.rb	/^    def src_test_lookup()$/;"	f	class:Tests
+src_test_lookup	tools\rake_utils\source\tests.rb	/^    def src_test_lookup()$/;"	f	class:Tests
 stack	tools\cxxtest\sample\SCons\tests\stack_test.h	/^    stack_t* stack;$/;"	m	class:stack_test
 stack_capacity	tools\cxxtest\sample\SCons\src\stack.c	/^int stack_capacity(stack_t* stack) {$/;"	f
 stack_create	tools\cxxtest\sample\SCons\src\stack.c	/^stack_t* stack_create() {$/;"	f
@@ -3237,7 +3243,7 @@ throws_runtime_error	tools\cxxtest\doc\examples\Assertions.h	/^    void throws_r
 throws_value	tools\cxxtest\doc\examples\Assertions.h	/^    void throws_value(void)$/;"	f	class:Test
 time	tools\cxxtest\doc\examples\MockTestSuite.h	/^    time_t time( time_t * ) { return counter++; }$/;"	f	class:MockObject
 time	tools\cxxtest\sample\mock\MockStdlib.h	/^    time_t time( time_t *t )$/;"	f	class:MockStdlib
-to_s	tools\rake_utils\artifact.rb	/^    def to_s$/;"	f	class:Artifact
+to_s	tools\rake_utils\source\artifact.rb	/^    def to_s$/;"	f	class:Artifact
 tocEntries	tools\cxxtest\doc\guide.html	/^  function tocEntries(el, toclevels) {$/;"	f
 tokens	tools\cxxtest\python\cxxtest\cxx_parser.py	/^tokens = [$/;"	v
 tokens	tools\cxxtest\python\python3\cxxtest\cxx_parser.py	/^tokens = [$/;"	v

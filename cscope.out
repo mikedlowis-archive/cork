@@ -1,4 +1,4 @@
-cscope 15 C:\Src\Personal\libraries\cork"               0000250749
+cscope 15 C:\Src\Personal\libraries\cork"               0000251447
 	@source/cork.cpp
 
 1 
@@ -45221,12 +45221,116 @@ L
 	}
 }
 
+	@tools/rake_utils/examples/maxapp1/source/main.cpp
+
+1 
+	~<¡dio.h
+>
+
+2 
+	~"max.h
+"
+
+4 
+	$maš
+(
+¬gc
+, ** 
+¬gv
+)
+
+6 
+	`´štf
+("maxÐ%d, %d ) =ð%d\n", 1, 2, 
+	`max
+(1,2));
+
+8 
+	}
+}
+
+	@tools/rake_utils/examples/maxapp2/source/main.cpp
+
+1 
+	~<¡dio.h
+>
+
+2 
+	~"max.h
+"
+
+4 
+	$maš
+(
+¬gc
+, ** 
+¬gv
+)
+
+6 
+	`´štf
+("maxÐ%d, %d ) =ð%d\n", 1, 2, 
+	`max
+(1,2));
+
+8 
+	}
+}
+
+	@tools/rake_utils/examples/maxlib/source/max.cpp
+
+1 
+	~"max.h
+"
+
+3 
+	$max
+(
+a
+, 
+b
+)
+
+5  (
+a
+ < 
+b
+) ? b :‡;
+
+6 
+	}
+}
+
+	@tools/rake_utils/examples/maxlib/source/max.h
+
+1 #iâdeà
+MAX_H
+
+
+2 
+	#MAX_H
+
+
+	)
+
+4 
+max
+(
+a
+, 
+b
+);
+
+	@tools/rake_utils/examples/maxtest/source/max.cpp
+
+	@tools/rake_utils/examples/maxtest/source/max.h
+
 	@
 1
 .
 0
-194
-7883
+200
+8173
 source/cork.cpp
 source/cork.h
 tests/source/main.h
@@ -45421,3 +45525,9 @@ tools/cxxtest/test/stpltpl.cpp
 tools/cxxtest/test/tpltpl.cpp
 tools/cxxtest/test/unit/LinkedList_test.t.h
 tools/cxxtest/test/wchar.cpp
+tools/rake_utils/examples/maxapp1/source/main.cpp
+tools/rake_utils/examples/maxapp2/source/main.cpp
+tools/rake_utils/examples/maxlib/source/max.cpp
+tools/rake_utils/examples/maxlib/source/max.h
+tools/rake_utils/examples/maxtest/source/max.cpp
+tools/rake_utils/examples/maxtest/source/max.h
