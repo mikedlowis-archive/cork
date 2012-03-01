@@ -79,25 +79,20 @@ void insert_record(void * ptr, BlockTableEntry_T* entry)
 
 void erase_record(void * ptr)
 {
-    int depth = 0;
     unsigned int index = ((unsigned int)ptr) % TBL_SIZE;
     BlockTableEntry_T* last = Block_Table.blocks[ index ];
     BlockTableEntry_T* curr = last;
 
     while( curr != NULL )
     {
-        depth = 1;
         if( curr->ptr == ptr )
         {
-            depth = 2;
             if(last == curr)
             {
-                depth = 3;
                 Block_Table.blocks[ index ] = (BlockTableEntry_T*)curr->next;
             }
             else
             {
-                depth = 4;
                 last->next = curr->next;
             }
             free(curr);
