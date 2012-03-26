@@ -9,7 +9,7 @@ require 'tools/rake_utils/source/tests'
 CorkStatic = Library.new({
     :name => 'libcork.a',
     :output_dir => 'build/static',
-    :compiler_options => [ '-c', '-Wall', '-Werror', '-o' ],
+    :compiler_options => [ '-c', '-Wall', '-o' ],
     :source_files => [ 'source/**/*.c*' ],
     :include_dirs => [ 'source/**/' ],
 })
@@ -19,7 +19,7 @@ CorkStatic.setup_default_rake_tasks()
 CorkShared = Library.new({
     :name => 'libcork.so',
     :output_dir => 'build/shared',
-    :compiler_options => [ '-c', '-Wall', '-Werror', '-o' ],
+    :compiler_options => [ '-c', '-Wall', '-fPIC', '-o' ],
     :linker_bin => 'c++',
     :linker_options => ['-shared', '-o'],
     :source_files => [ 'source/**/*.c*' ],
